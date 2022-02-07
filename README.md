@@ -6,7 +6,7 @@ tested in `Ubuntu`
 
  1. 
 ~~~
-./pyenvPath.sh -> pyenv install && Set path to `~/.bashrc`
+./pyenvInstall.sh -> pyenv install && Set path to `~/.bashrc`
 ~~~
  2. 
 ~~~
