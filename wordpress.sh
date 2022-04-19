@@ -53,3 +53,20 @@ echo \
         CustomLog /var/log/httpd/mywordpress-acces-log combined
 </VirtualHost>
 " >> /etc/httpd/conf/httpd.conf
+
+echo "-----------------------------------------------------------------"
+echo "-----------------------------------------------------------------"
+echo "-----------------------------------------------------------------"
+echo "------------ Team 1 Hera                          ---------------"
+echo "--------------------------- install Wordpress     ---------------"
+echo "-----------------------------------------------------------------"
+echo "-----------------------------------------------------------------"
+
+setenforce 0 
+
+yum install -y httpd 
+systemctl enable --now httpd
+
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --reload
