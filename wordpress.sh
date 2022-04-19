@@ -11,6 +11,8 @@ sleep 3
 
 yum update -y
 
+yum install -y wget
+
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm 
 yum -y install epel-release yum-utils
 
